@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Analise da foto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="{{foto}}">
+  <br>
+  <div *ngIf="dadosFoto">
+    <ion-textarea rows="6" style="border: 1px solid gray" [(ngModel)]="textImage"></ion-textarea>
+  </div>
+</ion-content>
