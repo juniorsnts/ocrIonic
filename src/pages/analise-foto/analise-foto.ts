@@ -34,7 +34,9 @@ export class AnaliseFotoPage {
       spinner: 'ios'
     });
     loadingCtrl.present();
-    Tesseract.recognize(this.foto)
+    Tesseract.recognize(this.foto, {
+      lang: 'por'
+    })
       .catch(err => {
         console.error(err);
         loadingCtrl.dismiss();
